@@ -1,0 +1,54 @@
+<html>
+  <body>
+    <script>
+      // Slide 8
+      // an arrow function with a default parameter
+      const calculateTax = (subTotal, taxRate = 0.074) => {
+        const tax = subTotal * taxRate;
+        return tax.toFixed(2);
+      }
+      const tax1 = calculateTax(100);
+      document.write(tax1);
+      document.write("<br>");
+      const tax2 = calculateTax(100, 0.087);
+      document.write(tax2);
+      document.write("<br>");
+      const tax3 = calculateTax(100, null);
+      document.write(tax3);
+      document.write("<br>");
+      const tax4 = calculateTax(100, undefined);
+      document.write(tax4);
+      document.write("<br>");
+      // Slide 9
+      const getArea = (radius = 15) => {
+        return Math.round(Math.PI * radius ** 2);
+      }
+      const area1 = getArea();
+      document.write(area1);
+      document.write("<br>");
+      const area2 = getArea(4);
+      document.write(area2);
+      document.write("<br>");
+      // Slide 11
+      // an arrow function with rest parameter
+      const calculateTaxAll = (taxRate, ...subtotals) => {
+        let tax = 0;
+        for(let subtotal of subtotals) {
+          tax += subtotal * taxRate;
+        }
+        return tax.toFixed(2);
+      }
+      document.write("calculateTaxAll");
+      document.write("<br>");
+      const tax5 = calculateTaxAll(0.074, 100);
+      document.write(tax5);
+      document.write("<br>");
+      const tax6 = calculateTaxAll(0.074, 100, 200);
+      document.write(tax6);
+      document.write("<br>");
+      const tax7 = calculateTaxAll(0.074, 100, 200, 400, 500);
+      document.write(tax7);
+      document.write("<br>");
+    </script>
+  </body>
+</html>
