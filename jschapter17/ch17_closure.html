@@ -42,5 +42,30 @@
       document.querySelector("#calculate")
         .addEventListener("click", item.displayFullPrice(25));
     });
+    // Slide 40
+    const sayHello = function() { // define function
+      console.log("Hello");
+    }
+    sayHello(); // invoke function
+
+    // an immediately invoked function expression (IIFE)
+    (function() {
+      console.log("Hello again!");
+    })();
+
+    // an immediately invoked arrow function
+    ( () => {
+      console.log("Hello once more!");
+    })();
+
+    // Slide 43
+    const result = ( () => {
+      const message = "Thanks!";
+      return message;
+    })();
+    console.log(result);
+
+    const message = "Have a great weekend!";
+    console.log(message);
   </script>
 </html>
