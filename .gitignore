@@ -1,0 +1,3 @@
+movie_reviews/backend/node_modules
+movie_reviews/backend/node_modules/*
+movie_reviews/backend/node_modules/.package-lock.json
