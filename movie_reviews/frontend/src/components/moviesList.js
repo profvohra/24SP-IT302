@@ -30,6 +30,7 @@ const MoviesList = () => {
         console.log(e);
       });
   };
+
   const retrieveRatings = () => {
     MovieDataService.getRatings()
       .then((response) => {
@@ -41,6 +42,7 @@ const MoviesList = () => {
         console.log(e);
       });
   };
+  
   const onChangeSearchTitle = (e) => {
     const searchTitle = e.target.value
     setSearchTitle(searchTitle);

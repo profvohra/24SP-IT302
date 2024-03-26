@@ -2,3 +2,6 @@ movie_reviews/backend/node_modules
 movie_reviews/backend/node_modules/*
 movie_reviews/backend/node_modules/.package-lock.json
 movie_reviews/backend/.env
+movie_reviews/frontend/node_modules
+movie_reviews/frontend/node_modules/*
+movie_reviews/frontend/package-lock.json
