@@ -16,7 +16,6 @@ const MoviesList = () => {
   const [ratings, setRatings] = useState(["All Ratings"]);
 
   useEffect(() => {
-    console.log("moviesList useEffect");
     retrieveMovies();
     retrieveRatings();
   }, []);
