@@ -23,7 +23,7 @@ function App() {
     setUser(null);
   }
   return (
-    <div className="App">
+    <div>
       <Navbar bg="light" expand="lg">
         <Navbar.Brand>Movie Reviews</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

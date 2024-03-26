@@ -81,7 +81,7 @@ const findByRating =
 
 
   return (
-    <div className="App">
+    <div>
       <Container>
         <Form>
           <Row>
